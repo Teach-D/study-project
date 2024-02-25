@@ -1,11 +1,10 @@
-package sw.contest.spring.mvc1.discount;
+package com.study.project.spring.mvc1.discount;
 
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Primary;
+import com.study.project.spring.mvc1.annotation.MainDiscountPolicy;
+import com.study.project.spring.mvc1.member.Grade;
+import com.study.project.spring.mvc1.member.Member;
 import org.springframework.stereotype.Component;
-import sw.contest.spring.mvc1.annotation.MainDiscountPolicy;
-import sw.contest.spring.mvc1.member.Grade;
-import sw.contest.spring.mvc1.member.Member;
+
 
 @Component
 @MainDiscountPolicy

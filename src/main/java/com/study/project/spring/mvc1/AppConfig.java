@@ -1,16 +1,15 @@
-package sw.contest.spring.mvc1;
+package com.study.project.spring.mvc1;
 
+import com.study.project.spring.mvc1.discount.DiscountPolicy;
+import com.study.project.spring.mvc1.discount.RateDiscountPolicy;
+import com.study.project.spring.mvc1.member.MemberRepository;
+import com.study.project.spring.mvc1.member.MemberService;
+import com.study.project.spring.mvc1.member.MemberServiceImpl;
+import com.study.project.spring.mvc1.member.MemoryMemberRepository;
+import com.study.project.spring.mvc1.order.OrderService;
+import com.study.project.spring.mvc1.order.OrderServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import sw.contest.spring.mvc1.discount.DiscountPolicy;
-import sw.contest.spring.mvc1.discount.FixDiscountPolicy;
-import sw.contest.spring.mvc1.discount.RateDiscountPolicy;
-import sw.contest.spring.mvc1.member.MemberRepository;
-import sw.contest.spring.mvc1.member.MemberService;
-import sw.contest.spring.mvc1.member.MemberServiceImpl;
-import sw.contest.spring.mvc1.member.MemoryMemberRepository;
-import sw.contest.spring.mvc1.order.OrderService;
-import sw.contest.spring.mvc1.order.OrderServiceImpl;
 
 @Configuration
 public class AppConfig {

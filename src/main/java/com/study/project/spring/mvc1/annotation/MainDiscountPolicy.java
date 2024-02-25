@@ -1,4 +1,4 @@
-package sw.contest.spring.mvc1.annotation;
+package com.study.project.spring.mvc1.annotation;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 

@@ -1,4 +1,4 @@
-package sw.contest.spring.mvc1.order;
+package com.study.project.spring.mvc1.order;
 
 public interface OrderService {
 

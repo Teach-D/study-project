@@ -1,4 +1,4 @@
-package sw.contest.spring.mvc1.member;
+package com.study.project.spring.mvc1.member;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;

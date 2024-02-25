@@ -1,6 +1,7 @@
-package sw.contest.spring.mvc1.discount;
+package com.study.project.spring.mvc1.discount;
 
-import sw.contest.spring.mvc1.member.Member;
+
+import com.study.project.spring.mvc1.member.Member;
 
 public interface DiscountPolicy {
 

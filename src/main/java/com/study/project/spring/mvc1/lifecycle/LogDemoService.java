@@ -1,4 +1,4 @@
-package sw.contest.spring.mvc1.lifecycle;
+package com.study.project.spring.mvc1.lifecycle;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.ObjectProvider;
