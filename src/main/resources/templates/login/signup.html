@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>회원가입/로그인</title>
+    <link rel="stylesheet" type="text/css" href="/css/login-join.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="container" id="container">
+    <!--회원가입 화면-->
+        <form action="/members/add" method="POST" th:object="${member}">
+            <h1>Criminal Map 회원가입</h1>
+            <input type="text" th:field="*{name}" placeholder="이름">
+            <div th:errors="*{name}"></div>
+            <input type="email" th:field="*{loginId}" placeholder="아이디/이메일">
+            <div th:errors="*{loginId}"></div>
+            <input type="password" th:field="*{password}" placeholder="비밀번호">
+            <div th:errors="*{password}"></div>
+
+            <button type="submit">가입하기</button>
+        </form>
+
+</div>
+
+
+</body>
+</html>
+
+
+
+

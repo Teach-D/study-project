@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>회원가입/로그인</title>
+    <link rel="stylesheet" type="text/css" href="/css/login-join.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="container" id="container">
+
+        <form action="/login" method="POST" th:object="${member}">
+            <h1>Criminal Map 로그인</h1>
+            <div th:if="${#fields.hasGlobalErrors()}">
+                <p class="field-error" th:each="err : ${#fields.globalErrors()}"
+                   th:text="${err}">전체 오류 메시지</p>
+            </div>
+            <input type="email" th:field="*{loginId}" placeholder="아이디/이메일">
+            <div th:errors="*{loginId}"></div>
+            <input type="password" th:field="*{password}" placeholder="비밀번호">
+            <div th:errors="*{password}"></div>
+            <a href="#">비밀번호 찾기</a>
+            <button type="submit">로그인</button>
+            <a href="/members/add"><li>회원가입</li></a>
+        </form>
+
+</div>
+</body>
+</html>
+
+
+
+
