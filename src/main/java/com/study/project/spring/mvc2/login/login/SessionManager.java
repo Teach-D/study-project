@@ -1,4 +1,4 @@
-package com.study.project.spring.mvc2.login;
+package com.study.project.spring.mvc2.login.login;
 
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;

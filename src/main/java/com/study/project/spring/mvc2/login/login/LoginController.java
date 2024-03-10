@@ -1,4 +1,4 @@
-package com.study.project.spring.mvc2.login;
+package com.study.project.spring.mvc2.login.login;
 
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
@@ -7,7 +7,6 @@ import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -59,12 +58,11 @@ public class LoginController {
 
     @PostMapping("/login")
     public String loginHttpSession(@Validated @ModelAttribute("member") LoginForm loginForm,
-                        BindingResult bindingResult, HttpServletRequest request) {
+                        BindingResult bindingResult,HttpServletRequest request) {
         if(bindingResult.hasErrors()) {
             log.info("로그인 에러");
             return "login/login";
         }
-
         SignUpMember signUpMember = loginService.loginMember(loginForm.getLoginId(), loginForm.getPassword());
 
         if(signUpMember == null) {
@@ -77,6 +75,7 @@ public class LoginController {
 
         return "redirect:/guPage/index";
     }
+
 
     //@PostMapping("/logout")
     public String logout(HttpServletRequest request) {

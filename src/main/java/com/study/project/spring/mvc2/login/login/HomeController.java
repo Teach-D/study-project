@@ -1,4 +1,4 @@
-package com.study.project.spring.mvc2.login;
+package com.study.project.spring.mvc2.login.login;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
