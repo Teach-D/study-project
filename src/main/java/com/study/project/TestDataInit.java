@@ -1,7 +1,7 @@
 package com.study.project;
 
-import com.study.project.spring.mvc2.login.SignUpMember;
-import com.study.project.spring.mvc2.login.SignUpRepository;
+import com.study.project.spring.mvc2.login.login.SignUpMember;
+import com.study.project.spring.mvc2.login.login.SignUpRepository;
 import com.study.project.spring.mvc2.shopping.Item;
 import com.study.project.spring.mvc2.shopping.ItemRepository;
 import jakarta.annotation.PostConstruct;
