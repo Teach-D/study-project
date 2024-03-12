@@ -87,9 +87,9 @@ public class MemberRepositoryV3 {
             pstmt.setInt(1, money);
             pstmt.setString(2, memberId);
             int resultSize = pstmt.executeUpdate();
-            log.info("resultSize=" + resultSize);
+            //log.info("resultSize=" + resultSize);
         } catch (SQLException e) {
-            log.error("db error", e);
+            //log.error("db error", e);
             throw e;
         } finally {
             close(con, pstmt, null);
@@ -107,7 +107,7 @@ public class MemberRepositoryV3 {
             pstmt = con.prepareStatement(sql);
             pstmt.setString(1, memberId);
             int resultSize = pstmt.executeUpdate();
-            log.info("resultSize=" + resultSize);
+           // log.info("resultSize=" + resultSize);
         } catch (SQLException e) {
             log.error("db error", e);
             throw e;
@@ -125,7 +125,7 @@ public class MemberRepositoryV3 {
 
     private Connection getConnection() throws SQLException {
         Connection con = DataSourceUtils.getConnection(dataSource);
-        log.info("get connection={}, class={}", con, con.getClass());
+      //  log.info("get connection={}, class={}", con, con.getClass());
         return con;
     }
 }
