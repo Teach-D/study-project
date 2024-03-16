@@ -1,7 +1,6 @@
 package com.study.project.db.jdbc.service;
 
 import com.study.project.db.jdbc.domain.Member;
-import com.study.project.db.jdbc.repository.MemberRepositoryV2;
 import com.study.project.db.jdbc.repository.MemberRepositoryV3;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.AfterEach;
@@ -19,7 +18,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 @Slf4j
-public class MemberServiceV3Test {
+public class MemberServiceV3_1Test {
 
     public static final String MEMBER_A = "memberA";
     public static final String MEMBER_B = "memberB";
